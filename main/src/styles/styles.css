@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+    flex: 1;
+  }
+  
+  .project {
+    background-color: white;
+    margin: 1em 0;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5em 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  h4 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  h5 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
+  h6 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  
+    h5 {
+      font-size: 16px;
+    }
+  
+    h6 {
+      font-size: 14px;
+    }
+  
+    nav ul {
+      font-size: 14px;
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 0.5em 0;
+    }
+  
+    main {
+      padding: 1em;
+    }
+  
+    header, footer {
+      padding: 10px;
+    }
+  
+    footer p {
+      font-size: 14px;
+    }
+  }
+  
