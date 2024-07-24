@@ -1,10 +1,10 @@
-import React from 'react';
+
 import Project from '../components/Project';
 
 const Portfolio = () => {
   const projects = [
-    { title: 'Project 1', description: 'Description of project 1', image: 'path/to/image1.jpg' },
-    { title: 'Project 2', description: 'Description of project 2', image: 'path/to/image2.jpg' },
+    { title: 'Brew Quest', description: 'Get access to local breweries wherever you are', image: 'path/to/image1.jpg' },
+    { title: 'Beer Blog', description: 'Meet other beer entusiasts ', image: 'path/to/image2.jpg' },
     // Add more projects as needed
   ];
 

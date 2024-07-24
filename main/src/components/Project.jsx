@@ -1,4 +1,3 @@
-// import React from 'react';
 
 const Project = (props) => {
     const {title, description, image} = props;

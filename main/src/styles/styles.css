@@ -30,7 +30,7 @@ body {
   nav ul {
     list-style: none;
     font-size: 18px;
-    padding: 0;
+    padding-top: 15px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -47,6 +47,11 @@ body {
   }
   
   nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .link-active {
+    color: #ffcc00;
     text-decoration: underline;
   }
   
@@ -102,19 +107,16 @@ body {
     margin-bottom: 1rem;
   }
   
-  footer {
+  .footer {
     background-color: #222;
     color: white;
     padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
-  footer p {
+  .footer p {
     font-size: 16px;
     margin: 0;
+    text-align: center;
   }
   
   /* Responsive adjustments */
