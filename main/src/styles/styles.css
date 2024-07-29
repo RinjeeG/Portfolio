@@ -16,7 +16,7 @@ body {
   }
   
   header {
-    background-color: #154557;
+    background-color: #333135;
     color: white;
     padding: 20px;
     text-align: center;
@@ -47,12 +47,12 @@ body {
   }
   
   nav ul li a:hover {
-    text-decoration: underline;
+    opacity: 0.1;
   }
 
   .link-active {
-    color: #ffcc00;
-    text-decoration: underline;
+    color: #007bff;
+    transform: (1.2);
   }
   
   main {
@@ -278,7 +278,7 @@ button[type='submit']:hover {
   .footer {
     display: flex;
     justify-content:center;
-    background-color: #154557;
+    background-color: #333135;
     color: white;
     padding: 20px;
   }
