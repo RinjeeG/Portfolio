@@ -1,18 +1,19 @@
 import Project from '../components/Project';
 import placeholderImage from '../assets/icons/coming-soon.png';
 import projectIcon from '../assets/icons/brew.png';
+import breweryTracker from '../assets/images/breweryTracker.png';
 const projects = [
+  {
+    title: 'Brewery Tracker',
+    image: breweryTracker, // Update with actual image path
+    deployedLink: 'https://deployed-link-1.com',
+    githubLink: 'https://github.com/djinjones/Brewery-Tracker.git',
+  },
   {
     title: 'Brew Quest',
     image: projectIcon, // Update with actual image path
-    deployedLink: 'https://deployed-link-1.com',
+    deployedLink: 'https://djinjones.github.io/Brewery-Tracker/',
     githubLink: 'https://github.com/djinjones/BrewQuest.git',
-  },
-  {
-    title: 'Project 2',
-    image: 'path/to/project2.jpg', // Update with actual image path
-    deployedLink: 'https://deployed-link-2.com',
-    githubLink: 'https://github.com/username/project2',
   },
   {
     title: 'Project 3',
