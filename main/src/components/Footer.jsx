@@ -1,6 +1,6 @@
-import gitIcon from '../assets/images/github.png';
-import linkedinIcon from '../assets/images/linkedin.png';
-import mailIcon from '../assets/images/mail.png';
+import gitIcon from '../assets/icons/github.png';
+import linkedinIcon from '../assets/icons/linkedin.png';
+import mailIcon from '../assets/icons/mail.png';
 
 
 function Footer() {

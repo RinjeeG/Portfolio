@@ -1,11 +1,14 @@
+import icon from '../assets/icons/github.png';
+
 const Project = ({ title, image, deployedLink, githubLink }) => {
     return (
       <div className="project-item">
-        <img src={image} alt={title} />
-        <h3>{title}</h3>
+        <div className="project-image" style={{ backgroundImage:`url(${image})` }}></div>
+      <h3> <a href={deployedLink} target="_blank" rel="noopener noreferrer"> {title}</a></h3>
         <div className="links">
-          <a href={deployedLink} target="_blank" rel="noopener noreferrer">Deployed App</a>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+            <img src={icon} alt="github Icon" className='icon'/>
+          </a>
         </div>
       </div>
     );

@@ -1,12 +1,12 @@
-
 import Project from '../components/Project';
-
+import placeholderImage from '../assets/icons/coming-soon.png';
+import projectIcon from '../assets/icons/brew.png';
 const projects = [
   {
-    title: 'Project 1',
-    image: 'path/to/project1.jpg', // Update with actual image path
+    title: 'Brew Quest',
+    image: projectIcon, // Update with actual image path
     deployedLink: 'https://deployed-link-1.com',
-    githubLink: 'https://github.com/username/project1',
+    githubLink: 'https://github.com/djinjones/BrewQuest.git',
   },
   {
     title: 'Project 2',
@@ -16,25 +16,25 @@ const projects = [
   },
   {
     title: 'Project 3',
-    image: 'path/to/project3.jpg', // Update with actual image path
+    image: placeholderImage, // Update with actual image path
     deployedLink: 'https://deployed-link-3.com',
     githubLink: 'https://github.com/username/project3',
   },
   {
     title: 'Project 4',
-    image: 'path/to/project4.jpg', // Update with actual image path
+    image: placeholderImage, // Update with actual image path
     deployedLink: 'https://deployed-link-4.com',
     githubLink: 'https://github.com/username/project4',
   },
   {
     title: 'Project 5',
-    image: 'path/to/project5.jpg', // Update with actual image path
+    image: placeholderImage, // Update with actual image path
     deployedLink: 'https://deployed-link-5.com',
     githubLink: 'https://github.com/username/project5',
   },
   {
     title: 'Project 6',
-    image: 'path/to/project6.jpg', // Update with actual image path
+    image: placeholderImage, // Update with actual image path
     deployedLink: 'https://deployed-link-6.com',
     githubLink: 'https://github.com/username/project6',
   },
@@ -42,9 +42,10 @@ const projects = [
 
 const Portfolio = () => {
   return (
+    <main>
     <section className="portfolio">
       <h2>Portfolio</h2>
-      <div className="portfolio-grid">
+      <div className="portfolio-container">
         {projects.map((project, index) => (
           <Project
             key={index}
@@ -56,6 +57,7 @@ const Portfolio = () => {
         ))}
       </div>
     </section>
+    </main>
   );
 };
 
