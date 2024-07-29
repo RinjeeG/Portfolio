@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +12,8 @@ const Contact = () => {
     email: '',
     message: '',
   });
+
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -65,6 +67,15 @@ const Contact = () => {
     if (valid) {
       // Handle form submission (e.g., send the data to an API or email service)
       console.log('Form submitted:', formData);
+
+      // Clear form data and show submission message
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 5000); // Hide message after 5 seconds
     }
   };
 
@@ -112,6 +123,7 @@ const Contact = () => {
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
         <button type="submit">Submit</button>
+        {submitted && <p className="success">Your message has been sent!</p>}
       </form>
     </section>
     </main>
