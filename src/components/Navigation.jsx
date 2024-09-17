@@ -1,43 +1,45 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Navigation = () => {
-  const currentPage = useLocation().pathname;
-
   return (
     <nav>
       <ul style={{ listStyle: 'none', display: 'flex', gap: '20px' }}>
         <li>
           <Link 
-            to="/" 
-            className={currentPage === '/' ? 'link-active' : 'link'}
-            aria-current={currentPage === '/' ? 'page' : undefined}
+            to="home" 
+            smooth={true} 
+            duration={500}
+            offset={-70} // Adjust this based on the height of your header
           >
             About Me
           </Link>
         </li>
         <li>
           <Link 
-            to="/portfolio" 
-            className={currentPage === '/portfolio' ? 'link-active' : 'link'}
-            aria-current={currentPage === '/portfolio' ? 'page' : undefined}
+            to="portfolio" 
+            smooth={true} 
+            duration={500}
+            offset={-70}
           >
             Portfolio
           </Link>
         </li>
         <li>
           <Link 
-            to="/contact" 
-            className={currentPage === '/contact' ? 'link-active' : 'link'}
-            aria-current={currentPage === '/contact' ? 'page' : undefined}
+            to="contact" 
+            smooth={true} 
+            duration={500}
+            offset={-70}
           >
             Contact
           </Link>
         </li>
         <li>
           <Link 
-            to="/resume" 
-            className={currentPage === '/resume' ? 'link-active' : 'link'}
-            aria-current={currentPage === '/resume' ? 'page' : undefined}
+            to="resume" 
+            smooth={true} 
+            duration={500}
+            offset={-70}
           >
             Resume
           </Link>
