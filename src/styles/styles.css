@@ -50,10 +50,6 @@ body {
     opacity: 0.1g;
   }
 
-  .link-active {
-    color: #007bff;
-    transform: (1.2);
-  }
   
   main {
     padding: 2em;
@@ -295,6 +291,20 @@ button[type='submit']:hover {
     color: #007bff;
     transform: scale(1.1);
   }
+
+  .link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+  
+  .link-active {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    border-bottom: 2px solid blue;
+  }
+  
 
   /* Responsive adjustments */
   @media (max-width: 600px) {

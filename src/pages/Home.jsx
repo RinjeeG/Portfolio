@@ -1,5 +1,8 @@
 
 import profilePic from '../assets/images/profilePic.jpg';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import Resume from './Resume';
 
 const Home = () => {
   return (
@@ -7,7 +10,7 @@ const Home = () => {
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <img 
           src={profilePic} 
-          alt="Profile"
+          alt="Profile picture of Rinjee" 
           style={{ width: '200px', height: '200px', border: '3px solid black', borderRadius: '40%', marginRight: '20px' }}
         />
         <div>
@@ -16,6 +19,21 @@ const Home = () => {
           Id vivamus at efficitur hac cursus tellus gravida. Mollis lectus arcu donec senectus nec ipsum eleifend odio. Bibendum habitasse habitant cras turpis class euismod vitae nisi. Enim aliquet vivamus habitasse nisl semper platea. Ac elementum dignissim massa vulputate est efficitur magnis. Congue massa velit efficitur sagittis; duis semper. Neque imperdiet hendrerit per hac aptent felis dui ridiculus at. Fames luctus hac sociosqu quam laoreet et elementum. Odio blandit malesuada a id integer taciti.</p>
         </div>
       </div>
+      {/* Portfolio Section */}
+      <section id="portfolio" style={{ minHeight: '100vh' }}>
+        <Portfolio />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" style={{ minHeight: '100vh' }}>
+        <Contact />
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" style={{ minHeight: '100vh' }}>
+        <Resume />
+      </section>
+
     </main>
   );
 };

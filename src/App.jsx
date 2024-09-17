@@ -12,7 +12,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        {/* Scrollable One-page layout */}
         <Route path="/" element={<Home />} />
+        {/* Individual routes for each esction */}
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume/>}/>
