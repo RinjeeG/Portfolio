@@ -30,7 +30,7 @@ Welcome to my portfolio website! This project showcases my work and skills as a 
   - Clears the form and shows a success message upon successful submission.
 
 ## Links
-[text](https://rinjeesherpa.netlify.app/)
+[Portfolio](https://rinjeesherpa.netlify.app/)
 
 ## License
 

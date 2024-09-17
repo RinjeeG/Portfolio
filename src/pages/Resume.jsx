@@ -1,4 +1,4 @@
-import resumeFile from '../assets/documents/resume.pdf'; // Replace with the path to your resume file
+import resumeFile from '../assets/documents/RinjeeSherpaMern.pdf'; // Replace with the path to your resume file
 
 const proficiencies = [
   'JavaScript',
